@@ -1,0 +1,820 @@
+1641213436172|22|statement|connection 0|/* ping */ SELECT 1|
+1641213440056|18|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213440062|3|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213440067|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213440068|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213440071|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213450006|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213450008|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213450011|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213450012|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213450013|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213460008|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213460010|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213460012|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213460013|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213460015|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213470005|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213470007|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213470008|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213470009|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213470010|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213480006|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213480011|3|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213480015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213480019|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213480023|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213490004|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213490007|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213490010|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213490011|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213490012|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213500007|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213500008|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213500011|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213500011|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213500013|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213510005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213510012|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213510014|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213510018|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213510020|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213520004|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213520012|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213520013|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213520016|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213520016|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213530007|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213530008|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213530011|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213530012|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213530013|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213540007|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213540017|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213540018|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213540019|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213540021|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213550006|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213550007|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213550009|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213550010|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213550012|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213560010|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213560012|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213560013|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213560020|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213560021|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213570006|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213570007|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213570009|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213570011|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213570012|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213580005|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213580006|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213580008|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213580015|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213580016|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213590009|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213590011|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213590013|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213590014|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213590017|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213600007|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213600010|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213600012|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213600014|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213600017|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213610007|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213610030|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213610032|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213610037|5|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213610039|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213620007|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213620008|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213620010|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213620012|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213620013|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213630007|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213630009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213630011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213630012|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213630014|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213640003|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213640009|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213640010|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213640012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213640013|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213650007|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213650008|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213650010|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213650011|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213650012|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213660008|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213660010|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213660013|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213660019|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213660021|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213670006|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213670008|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213670011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213670013|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213670014|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213680007|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213680014|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213680016|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213680018|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213680019|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213690004|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213690012|5|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213690018|4|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213690019|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213690020|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213700004|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213700010|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213700011|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213700012|0|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213700013|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213840260|5|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213840267|24|statement|connection 1|/* ping */ SELECT 1|
+1641213840269|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213840276|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213841097|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213841099|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213850004|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213850013|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213850015|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213850018|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213850020|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213860004|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213860014|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213860015|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213860018|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213860020|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213870005|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213870007|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213870009|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213870010|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213870011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213880008|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213880016|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213880018|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213880020|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213880021|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213890008|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213890015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213890017|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213890018|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213890020|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213900009|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213900011|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213900014|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213900016|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213900018|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213910008|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213910015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213910016|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213910019|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213910021|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213920006|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213920013|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213920014|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213920015|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213920018|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213930007|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213930008|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213930010|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213930016|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213930017|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213940016|8|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213940024|4|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213940030|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213940038|6|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213940045|4|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213950011|6|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213950014|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213950018|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213950020|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213950023|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213960007|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213960009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213960013|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213960015|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213960017|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213970007|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213970008|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213970010|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213970010|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213970011|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213980007|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641213980015|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213980018|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213980021|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213980022|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213990011|4|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641213990012|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641213990015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641213990018|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641213990020|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214000004|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214000005|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214000006|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214000007|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214000008|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214010007|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214010008|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214010009|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214010015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214010016|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214020009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214020017|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214020019|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214020021|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214020022|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214030004|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214030010|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214030011|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214030014|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214030016|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214040006|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214040008|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214040009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214040015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214040016|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214050004|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214050006|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214050008|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214050009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214050011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214060008|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214060009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214060010|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214060014|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214060016|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214070004|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214070006|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214070007|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214070012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214070013|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214080011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214080025|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214080026|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214080030|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214080031|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214090005|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214090006|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214090009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214090014|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214090015|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214100005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214100018|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214100037|19|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214100039|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214100048|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214110007|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214110016|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214110017|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214110019|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214110020|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214120003|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214120005|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214120007|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214120015|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214120015|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214130005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214130012|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214130013|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214130015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214130016|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214140060|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214140069|8|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214140073|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214140103|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214140111|7|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214150003|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214150004|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214150008|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214150009|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214150010|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214160008|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214160015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214160017|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214160020|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214160021|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214170007|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214170009|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214170010|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214170011|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214170012|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214180004|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214180010|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214180012|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214180013|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214180014|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214190006|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214190013|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214190014|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214190016|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214190017|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214200008|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214200015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214200018|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214200020|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214200022|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214210006|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214210013|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214210014|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214210017|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214210018|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214220006|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214220008|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214220010|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214220017|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214220018|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214230009|4|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214230018|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214230020|2|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214230021|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214230022|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214240006|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214240008|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214240011|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214240013|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214240014|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214250008|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214250009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214250013|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214250022|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214250022|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214260009|4|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214260011|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214260015|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214260017|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214260020|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214270009|6|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214270013|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214270017|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214270019|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214270021|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214280004|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214280005|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214280006|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214280007|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214280008|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214290004|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214290006|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214290009|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214290011|2|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214290012|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214300006|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214300007|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214300009|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214300010|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214300012|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214310010|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214310020|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214310022|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214310024|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214310025|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214320007|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214320009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214320011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214320019|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214320020|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214330008|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214330009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214330011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214330012|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214330013|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214340005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214340012|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214340014|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214340017|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214340019|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214350007|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214350009|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214350010|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214350017|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214350017|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214360005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214360011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214360012|1|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214360014|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214360014|0|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214370008|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214370010|1|statement|connection 0|select id from web_seckill where status = 2 and endTime<=NOW()|select id from web_seckill where status = 2 and endTime<=NOW()
+1641214370011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214370012|0|statement|connection 0|select id, stock from web_seckill where status = 1 and startTime<=NOW()|select id, stock from web_seckill where status = 1 and startTime<=NOW()
+1641214370013|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214400735|14|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214400748|21|statement|connection 1|/* ping */ SELECT 1|
+1641214401540|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214401542|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214401546|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214401548|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214410006|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214410008|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214410011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214410020|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214410022|2|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214420006|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214420013|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214420015|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214420017|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214420019|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214430009|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214430012|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214430014|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214430016|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214430018|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214440005|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214440016|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214440019|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214440022|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214440024|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214450005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214450012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214450014|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214450016|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214450016|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214460008|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214460009|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214460011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214460016|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214460017|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214470007|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214470008|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214470010|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214470011|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214470012|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214480006|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214480012|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214480014|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214480015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214480015|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214490007|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214490008|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214490010|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214490011|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214490012|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214500007|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214500009|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214500013|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214500016|2|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214500019|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214510006|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214510011|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214510012|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214510014|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214510015|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214520004|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214520011|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214520012|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214520014|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214520015|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214530005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214530011|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214530012|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214530013|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214530014|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214540005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214540010|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214540012|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214540013|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214540014|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214550005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214550014|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214550016|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214550019|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214550020|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214560005|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214560013|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214560014|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214560016|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214560017|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214570008|4|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214570012|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214570015|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214570024|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214570025|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214580007|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214580008|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214580009|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214580015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214580016|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214590005|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214590006|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214590007|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214590012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214590013|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214600003|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214600004|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214600005|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214600010|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214600011|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214610007|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214610008|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214610009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214610015|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214610016|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214620005|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214620007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214620009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214620016|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214620018|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214630005|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214630008|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214630009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214630016|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214630017|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214640005|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214640006|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214640007|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214640012|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214640013|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214650006|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214650008|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214650011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214650024|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214650025|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214660006|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214660011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214660012|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214660013|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214660014|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214670009|5|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214670011|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214670018|6|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214670020|2|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214670023|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214680006|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214680012|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214680014|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214680028|5|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214680031|3|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214690004|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214690004|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214690007|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214690011|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214690012|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214700009|5|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214700012|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214700013|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214700021|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214700022|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214710008|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214710010|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214710015|5|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214710017|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214710018|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214720008|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214720030|6|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214720036|3|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214720041|4|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214720047|5|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214730009|4|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214730013|3|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214730014|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214730023|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214730024|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214740009|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214740029|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214740034|3|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214740042|5|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214740046|3|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214750005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214750011|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214750013|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214750015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214750015|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214760004|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214760009|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214760009|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214760011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214760012|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214770004|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214770006|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214770007|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214770012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214770014|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214780007|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214780015|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214780016|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214780018|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214780018|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214790006|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214790007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214790008|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214790009|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214790010|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214800009|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214800019|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214800020|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214800022|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214800023|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214810008|4|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214810010|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214810013|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214810023|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214810025|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214820002|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214820009|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214820011|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214820012|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214820013|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214830004|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214830005|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214830006|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214830011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214830012|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214840005|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214840007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214840009|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214840015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214840015|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214850002|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214850004|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214850006|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214850007|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214850008|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214860008|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214860030|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214860031|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214860034|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214860037|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214870005|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214870011|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214870012|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214870013|0|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214870014|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214880006|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214880006|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214880008|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214880013|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214880014|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214890005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214890011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214890012|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214890014|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214890015|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214900006|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214900007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214900008|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214900009|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214900011|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214910005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214910011|0|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214910012|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641214910013|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214910014|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214920007|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641214920016|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641214920018|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641214920020|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641214920021|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215025937|27|statement|connection 0|/* ping */ SELECT 1|
+1641215030394|270|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215030398|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215030411|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215030413|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215030415|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215040009|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215040013|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215040017|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215040025|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215040027|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215050008|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215050016|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215050018|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215050021|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215050024|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215139463|87|statement|connection 0|/* ping */ SELECT 1|
+1641215140330|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215140614|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215140616|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215140619|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215140620|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215150010|4|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215150017|5|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215150022|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215150028|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215150030|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215160032|7|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215160036|2|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215160040|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215160043|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215160051|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215170005|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215170007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215170012|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215170012|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215170013|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215180006|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215180007|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215180009|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215180010|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215180013|0|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215190007|3|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215190018|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215190019|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215190024|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215190025|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215200006|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215200012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215200014|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215200019|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215200021|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215210005|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215210006|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215210008|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215210009|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215210014|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215220010|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215220013|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215220021|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215220023|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215220024|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215230007|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215230011|3|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215230015|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215230017|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215230024|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215240005|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215240006|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215240007|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215240011|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215240012|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215250006|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215250007|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215250008|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215250013|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215250014|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215260015|5|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215260021|2|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215260027|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215260030|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215260056|6|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215270005|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215270007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215270013|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215270020|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215270021|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215280011|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215280014|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215280022|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215280028|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215280029|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215290005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215290011|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215290012|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215290019|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215290020|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215300005|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215300009|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215300010|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215300012|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215300013|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215310006|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215310012|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215310013|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215310019|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215310020|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215320009|4|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215320018|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215320020|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215320024|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215320030|4|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215330005|3|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215330009|3|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215330010|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215330017|3|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215330018|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215340011|7|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215340013|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215340016|2|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215340024|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215340025|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215350005|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215350006|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215350007|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215350017|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215350019|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215360005|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215360007|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215360015|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215360018|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215360020|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215370007|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215370008|0|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215370013|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215370014|0|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215370016|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215380005|1|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215380006|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215380008|2|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215380009|1|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215380015|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0
+1641215390004|1|statement|connection 0|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()
+1641215390007|2|statement|connection 0|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()|select id, stock from web_seckill where `status` = 1 and startTime<=NOW()
+1641215390017|2|statement|connection 0|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()|update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()
+1641215390018|1|statement|connection 0|select id from web_seckill where `status` = 2 and endTime<=NOW()|select id from web_seckill where `status` = 2 and endTime<=NOW()
+1641215390019|1|statement|connection 0|select id, productId, stock from web_seckill where status = 0|select id, productId, stock from web_seckill where status = 0

@@ -1,0 +1,59 @@
+package com.java.mapper;
+
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Scheduled Scanner Mapper
+ *
+ * @author Shain
+ * @lastUpdate 2022-1-3
+ */
+public interface ProductScanMapper {
+
+    /**
+     * get all products that are about to start flash sale
+     *
+     * @return list of product ids and flash sale ids (primary key in db)
+     */
+    @Select("select id, productId, stock from web_seckill where status = 0")
+    List<Map<String, Object>> getToBeStarted();
+
+    /**
+     * change status from 0 to 1 for products that are being sale
+     *
+     * @param
+     * @return
+     */
+    @Update("update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()")
+    int changeStateForBeingSale();
+
+    /**
+     * change status from 1 to 2 for products afterSale
+     *
+     * @param
+     * @return
+     */
+    @Update("update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()")
+    int changeStateForAfterSale();
+
+    /**
+     * get products that have started sale to update state in redis
+     * @return
+     */
+    @Select("select id, stock from web_seckill where `status` = 1 and startTime<=NOW()")
+    List<Map<String, Object>> getBeingSale();
+
+    /**
+     * get products that have end sale to update state in redis
+     *
+     */
+    @Select("select id from web_seckill where `status` = 2 and endTime<=NOW()")
+    List<Map<String, Object>> getAfterSale();
+
+
+
+}
