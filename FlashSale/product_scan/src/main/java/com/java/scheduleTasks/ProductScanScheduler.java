@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Component
 public class ProductScanScheduler {
@@ -44,9 +45,9 @@ public class ProductScanScheduler {
             HashOperations vo = redisTemplate.opsForHash();
 
             // iterate products
-            for ( int i=0; i < products.size(); i++){
-                String saleId = products.get(i).get("id") + "";
-                int stock = Integer.parseInt(products.get(i).get("stock") + "");
+            for (Map<String, Object> product : products) {
+                String saleId = product.get("id") + "";
+                int stock = Integer.parseInt(product.get("stock") + "");
 
                 // SETNX in redis, for checking exist purpose
                 vo.putIfAbsent(saleId, stock, 0);
@@ -62,7 +63,7 @@ public class ProductScanScheduler {
      */
     @Scheduled(cron = "0/10 * * * * *")
     public void changeStateForBeingSale(){
-        System.out.println("changing for being sale");
+        //System.out.println("changing for being sale");
         service.changeStateForBeingSale();
 
         List<Map<String, Object>> productsBeingSale = service.getBeingSale();
@@ -87,7 +88,7 @@ public class ProductScanScheduler {
      */
     @Scheduled(cron = "0/10 * * * * *")
     public void changeStateForAfterSale(){
-        System.out.println("changing for after sale");
+        //System.out.println("changing for after sale");
         service.changeStateForAfterSale();
 
         List<Map<String, Object>> productsAfterSale = service.getAfterSale();
@@ -95,12 +96,25 @@ public class ProductScanScheduler {
         if (productsAfterSale.size() != 0){
             HashOperations ho = redisTemplate.opsForHash();
 
-            for (int i = 0; i <  productsAfterSale.size(); i++){
-                String id = productsAfterSale.get(i).get("id") + "";
-                int stock = (int) productsAfterSale.get(i).get("stock");
-                ho.increment(id, stock, 1L);
+            for (Map<String, Object> stringObjectMap : productsAfterSale) {
+                String id = stringObjectMap.get("id") + "";
+                int stock = (int) stringObjectMap.get("stock");
+                ho.put(id, stock, 2L);
             }
         }
     }
+
+//    /**
+//     *  Check status and stock in redis
+//     */
+//    @Scheduled(cron = "0/10 * * * * *")
+//    public void checkStatus(){
+//        HashOperations ho = redisTemplate.opsForHash();
+//
+//        Map<String, Object> key1 = ho.entries("1");
+//        Map<String, Object> key2 = ho.entries("2");
+//        Map<String, Object> key3 = ho.entries("3");
+//
+//    }
 
 }

@@ -51,7 +51,7 @@ public interface ProductScanMapper {
      * get products that have end sale to update state in redis
      *
      */
-    @Select("select id from web_seckill where `status` = 2 and endTime<=NOW()")
+    @Select("select id, stock from web_seckill where `status` = 2 and endTime<=NOW()")
     List<Map<String, Object>> getAfterSale();
 
 
