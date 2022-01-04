@@ -19,7 +19,7 @@ public interface ProductScanMapper {
      *
      * @return list of product ids and flash sale ids (primary key in db)
      */
-    @Select("select id, productId, stock from web_seckill where status = 0")
+    @Select("select id, productId, stock, salePrice from web_seckill where NOW() < startTime")
     List<Map<String, Object>> getToBeStarted();
 
     /**
@@ -28,7 +28,7 @@ public interface ProductScanMapper {
      * @param
      * @return
      */
-    @Update("update `web_seckill` set `status`=1 where `status`=0 and startTime <= NOW() and endTime > NOW()")
+    @Update("update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()")
     int changeStateForBeingSale();
 
     /**
@@ -37,14 +37,14 @@ public interface ProductScanMapper {
      * @param
      * @return
      */
-    @Update("update `web_seckill` set `status`=2 where `status`=1 and endTime <= NOW()")
+    @Update("update `web_seckill` set `status`=2 where endTime <= NOW()")
     int changeStateForAfterSale();
 
     /**
      * get products that have started sale to update state in redis
      * @return
      */
-    @Select("select id, stock from web_seckill where `status` = 1 and startTime<=NOW()")
+    @Select("select id, stock from web_seckill where `status` = 1 and startTime<=NOW() and endTime > NOW()")
     List<Map<String, Object>> getBeingSale();
 
     /**

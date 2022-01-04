@@ -48,9 +48,14 @@ public class ProductScanScheduler {
             for (Map<String, Object> product : products) {
                 String saleId = product.get("id") + "";
                 int stock = Integer.parseInt(product.get("stock") + "");
-
+                int price = Integer.parseInt(product.get("salePrice") + "");
+                int productId = Integer.parseInt(product.get("productId") + "");
                 // SETNX in redis, for checking exist purpose
-                vo.putIfAbsent(saleId, stock, 0);
+                vo.putIfAbsent(saleId, "stock", stock);
+                vo.putIfAbsent(saleId, "status", 0);
+                vo.putIfAbsent(saleId, "productId", productId);
+                vo.putIfAbsent(saleId, "price", price);
+
             }
         }
     }
@@ -74,8 +79,7 @@ public class ProductScanScheduler {
 
             for (int i = 0; i <  productsBeingSale.size(); i++){
                 String id = productsBeingSale.get(i).get("id") + "";
-                int stock = (int) productsBeingSale.get(i).get("stock");
-                ho.increment(id, stock, 1L);
+                ho.put(id, "status", 1L);
             }
         }
     }
@@ -99,22 +103,22 @@ public class ProductScanScheduler {
             for (Map<String, Object> stringObjectMap : productsAfterSale) {
                 String id = stringObjectMap.get("id") + "";
                 int stock = (int) stringObjectMap.get("stock");
-                ho.put(id, stock, 2L);
+                ho.put(id, "status", 2L);
             }
         }
     }
 
-//    /**
-//     *  Check status and stock in redis
-//     */
-//    @Scheduled(cron = "0/10 * * * * *")
-//    public void checkStatus(){
-//        HashOperations ho = redisTemplate.opsForHash();
-//
-//        Map<String, Object> key1 = ho.entries("1");
-//        Map<String, Object> key2 = ho.entries("2");
-//        Map<String, Object> key3 = ho.entries("3");
-//
-//    }
+    /**
+     *  Check status and stock in redis
+     */
+    @Scheduled(cron = "0/10 * * * * *")
+    public void checkStatus(){
+        HashOperations ho = redisTemplate.opsForHash();
+
+        Map<String, Object> key1 = ho.entries("1");
+        Map<String, Object> key2 = ho.entries("2");
+        Map<String, Object> key3 = ho.entries("3");
+
+    }
 
 }
