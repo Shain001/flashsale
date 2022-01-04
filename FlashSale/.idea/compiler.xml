@@ -6,12 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="flash_sale_deduct_redis" />
         <module name="product_scan" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="flash_sale_deduct_stock" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="flash_sale_deduct_redis" options="-parameters" />
+      <module name="flash_sale_deduct_stock" options="-parameters" />
       <module name="product_scan" options="-parameters" />
     </option>
   </component>

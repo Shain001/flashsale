@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 192.168.100.128:2181,192.168.100.128:2182,192.168.100.128:2183
+      #      connect-string: 192.168.100.128:2182,192.168.100.128:2183
+      discovery:
+        enabled: true

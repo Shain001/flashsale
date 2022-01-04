@@ -44,14 +44,14 @@ public interface ProductScanMapper {
      * get products that have started sale to update state in redis
      * @return
      */
-    @Select("select id, stock from web_seckill where `status` = 1 and startTime<=NOW() and endTime > NOW()")
+    @Select("select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()")
     List<Map<String, Object>> getBeingSale();
 
     /**
      * get products that have end sale to update state in redis
      *
      */
-    @Select("select id, stock from web_seckill where `status` = 2 and endTime<=NOW()")
+    @Select("select id, productId, stock, salePrice from web_seckill where endTime<=NOW()")
     List<Map<String, Object>> getAfterSale();
 
 

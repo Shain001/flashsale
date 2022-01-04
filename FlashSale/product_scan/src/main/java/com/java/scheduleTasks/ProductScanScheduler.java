@@ -42,7 +42,7 @@ public class ProductScanScheduler {
 
         if (products.size() != 0){
 
-            HashOperations vo = redisTemplate.opsForHash();
+            HashOperations ho = redisTemplate.opsForHash();
 
             // iterate products
             for (Map<String, Object> product : products) {
@@ -51,10 +51,10 @@ public class ProductScanScheduler {
                 int price = Integer.parseInt(product.get("salePrice") + "");
                 int productId = Integer.parseInt(product.get("productId") + "");
                 // SETNX in redis, for checking exist purpose
-                vo.putIfAbsent(saleId, "stock", stock);
-                vo.putIfAbsent(saleId, "status", 0);
-                vo.putIfAbsent(saleId, "productId", productId);
-                vo.putIfAbsent(saleId, "price", price);
+                ho.putIfAbsent(saleId, "stock", stock);
+                ho.putIfAbsent(saleId, "status", 0);
+                ho.putIfAbsent(saleId, "productId", productId);
+                ho.putIfAbsent(saleId, "price", price);
 
             }
         }
@@ -78,8 +78,14 @@ public class ProductScanScheduler {
             HashOperations ho = redisTemplate.opsForHash();
 
             for (int i = 0; i <  productsBeingSale.size(); i++){
-                String id = productsBeingSale.get(i).get("id") + "";
-                ho.put(id, "status", 1L);
+                String saleId = productsBeingSale.get(i).get("id") + "";
+                int stock = (int) productsBeingSale.get(i).get("stock");
+                int price = (int) productsBeingSale.get(i).get("salePrice");
+                int productId = Integer.parseInt(productsBeingSale.get(i).get("productId")+"");
+                ho.put(saleId, "status", 1);
+                ho.putIfAbsent(saleId, "stock", stock);
+                ho.putIfAbsent(saleId, "productId", productId);
+                ho.putIfAbsent(saleId, "price", price);
             }
         }
     }
@@ -101,9 +107,14 @@ public class ProductScanScheduler {
             HashOperations ho = redisTemplate.opsForHash();
 
             for (Map<String, Object> stringObjectMap : productsAfterSale) {
-                String id = stringObjectMap.get("id") + "";
+                String saleId = stringObjectMap.get("id") + "";
                 int stock = (int) stringObjectMap.get("stock");
-                ho.put(id, "status", 2L);
+                int price = Integer.parseInt(stringObjectMap.get("salePrice") + "");
+                int productId = Integer.parseInt(stringObjectMap.get("productId") + "");
+                ho.put(saleId, "status", 2);
+                ho.putIfAbsent(saleId, "stock", stock);
+                ho.putIfAbsent(saleId, "productId", productId);
+                ho.putIfAbsent(saleId, "price", price);
             }
         }
     }
@@ -118,6 +129,7 @@ public class ProductScanScheduler {
         Map<String, Object> key1 = ho.entries("1");
         Map<String, Object> key2 = ho.entries("2");
         Map<String, Object> key3 = ho.entries("3");
+
 
     }
 

@@ -1,0 +1,18 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: deductRedis
+  redis:
+    host: 192.168.100.128
+    database: 0
+    port: 6379
+    timeout: 5000
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+
+#    redis:
+#      redisson:
+#        file: classpath:redisson-config.yml
