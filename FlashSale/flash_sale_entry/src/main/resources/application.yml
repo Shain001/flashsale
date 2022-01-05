@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: flashSaleEntry
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000 # 连接超时时间
+        readTimeout: 5000   # 读超时时间
+        loggerLevel: full # 日志级别
+#    redis:
+#      redisson:
+#        file: classpath:redisson-config.yml

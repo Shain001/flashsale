@@ -4,14 +4,11 @@ import com.java.util.State;
 import org.redisson.Redisson;
 import org.redisson.api.RLock;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.HashOperations;
-import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.SetOperations;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,11 +23,16 @@ public class FlashSaleDeductRedis {
     @Autowired
     private RedisTemplate redisTemplate;
 
+    // Check Load Balance for Feign
+    @Value("${server.port}")
+    private String serverPort;
+
     // keys in redis for sale info query
     final private List<String> hashKeys = new ArrayList<String>(Arrays.asList("stock", "productId", "price"));
 
+    // The annotation @RequestParam is used for Feign client, otherwise the paragram cannot be acquired
     @RequestMapping(value = "/deductRedis", method = RequestMethod.POST)
-    public String deduct(String userId, String saleId){
+    public String deduct(@RequestParam("userId") String userId, @RequestParam("saleId") String saleId){
 
         // initializing redisTemplates
         HashOperations ho = redisTemplate.opsForHash();
@@ -44,17 +46,17 @@ public class FlashSaleDeductRedis {
         int state = (int) ho.get(saleId, "status");
 
         if (State.NOT_START.getValue() == state){
-            return "Sale will start soon";
+            return "Sale will start soon " + serverPort;
         }
 
         if (State.END.getValue() == state){
-            return "Sale has ended";
+            return "Sale has ended " + serverPort;
         }
 
         // check if current user has bought before
         String checkUserKey = "has_" + userId;
         if (lo.isMember(checkUserKey, userId)){
-            return "Don't be greedy";
+            return "Don't be greedy " + serverPort;
         }
 
         try{
@@ -69,12 +71,12 @@ public class FlashSaleDeductRedis {
 
             // check stock
             if (stock <= 0){
-                return "oops, out of stock";
+                return "oops, out of stock " + serverPort;
             }
 
             // All good, buy success, update stock in redis, then put message into MQ
             ho.put(saleId, "stock", stock-1);
-            return "Congratulations, you got it";
+            return "Congratulations, you got it " + serverPort;
 
         } catch (Exception e) {
             e.printStackTrace();

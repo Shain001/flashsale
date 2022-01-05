@@ -11,6 +11,7 @@
     <modules>
         <module>product_scan</module>
         <module>flash_sale_deduct_redis</module>
+        <module>flash_sale_entry</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

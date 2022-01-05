@@ -5,3 +5,4 @@ spring:
       #      connect-string: 192.168.100.128:2182,192.168.100.128:2183
       discovery:
         enabled: true
+        register: true
