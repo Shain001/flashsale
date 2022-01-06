@@ -15,10 +15,9 @@ import sun.util.locale.provider.FallbackLocaleProviderAdapter;
 import java.io.File;
 import java.io.IOException;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.java.*")
 @EnableCaching
 @EnableDiscoveryClient
-@ComponentScan(basePackageClasses = FlashSaleDeductRedis.class)
 public class FlashSaleDeductRedisStartApplication {
     public static void main(String[] args) {
         SpringApplication.run(FlashSaleDeductRedisStartApplication.class);

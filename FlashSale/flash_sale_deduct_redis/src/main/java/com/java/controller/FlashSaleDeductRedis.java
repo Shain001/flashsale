@@ -1,5 +1,6 @@
 package com.java.controller;
 
+import com.java.service.FlashSaleDeductRedisService;
 import com.java.util.State;
 import org.redisson.Redisson;
 import org.redisson.api.RLock;
@@ -22,6 +23,9 @@ public class FlashSaleDeductRedis {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Autowired
+    private FlashSaleDeductRedisService service;
 
     // Check Load Balance for Feign
     @Value("${server.port}")
@@ -76,6 +80,13 @@ public class FlashSaleDeductRedis {
 
             // All good, buy success, update stock in redis, then put message into MQ
             ho.put(saleId, "stock", stock-1);
+
+
+            // TODO: Add user to Redis
+
+            // Put Message to RabbitMQ
+            service.putRabbitMQ(saleId, userId);
+
             return "Congratulations, you got it " + serverPort;
 
         } catch (Exception e) {

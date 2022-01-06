@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="flash_sale_order" />
+        <module name="flash_sale_common" />
         <module name="product_scan" />
         <module name="flash_sale_consumer" />
         <module name="flash_sale_deduct_redis" />
@@ -17,9 +19,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="flash_sale_common" options="-parameters" />
       <module name="flash_sale_consumer" options="-parameters" />
       <module name="flash_sale_deduct_redis" options="-parameters" />
       <module name="flash_sale_deduct_stock" options="-parameters" />
+      <module name="flash_sale_order" options="-parameters" />
       <module name="product_scan" options="-parameters" />
     </option>
   </component>

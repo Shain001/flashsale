@@ -14,6 +14,17 @@ spring:
     restart:
       enabled: false
       additional-paths: src/main/java
+  rabbitmq: # rabbitmq configuration
+    host: localhost
+    port: 5672
+    virtual-host: /
+    username: guest
+    password: guest
+    connection-timeout: 5000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
 
 #    redis:
 #      redisson:
