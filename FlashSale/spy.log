@@ -8513,3 +8513,20 @@
 1641528150683|11|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
 1641529765191|21|statement|connection 0|/* ping */ SELECT 1|
 1641529822524|14|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641533645945|21|statement|connection 0|/* ping */ SELECT 1|
+1641533955163|50|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641534409935|21|statement|connection 0|/* ping */ SELECT 1|
+1641534418257|11|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641535493776|22|statement|connection 0|/* ping */ SELECT 1|
+1641535867519|33|statement|connection 0|/* ping */ SELECT 1|
+1641536853724|22|statement|connection 0|/* ping */ SELECT 1|
+1641536879068|30|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641537252934|22|statement|connection 0|/* ping */ SELECT 1|
+1641537275433|9|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641537280079|1|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '6' and userId = '1'
+1641537360493|9|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '6' and userId = '1'
+1641537461945|23|statement|connection 0|/* ping */ SELECT 1|
+1641537486546|4|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '6' and userId = '1'
+1641537601652|8|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '6' and userId = '1'
+1641537660590|6|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '6' and userId = '1'
+1641537718831|6|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '6' and userId = '1'
