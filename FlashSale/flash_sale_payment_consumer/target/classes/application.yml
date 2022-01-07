@@ -21,8 +21,11 @@ hystrix:
     default:
       execution:
         isolation:
+          strategy: thread
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 5000
+      circuitBreaker:
+        enabled: true
 
 
 #    redis:

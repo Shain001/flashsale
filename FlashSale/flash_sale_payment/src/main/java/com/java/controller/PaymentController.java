@@ -23,12 +23,15 @@ public class PaymentController {
         // the return value of paymentAPI, e.g. 1 -> pay sucess, 0 -> pay fail
         int state = service.changeOrderState(saleId, userId, 1);
 
+//        // Test Circuit Breaker timeout
+//        Thread.sleep(20000);
+
         // When update failed, throw exception, so that consumer return 降级页面
         // 如果不加该判断， 不会返回异常
         if (state == 0){
             throw new Exception("Not Created Yet");
         }
 
-        return state+"";
+        return state+" Thread: " + Thread.currentThread().getName();
     }
 }
