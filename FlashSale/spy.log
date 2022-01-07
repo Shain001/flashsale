@@ -8509,3 +8509,7 @@
 1641473370014|2|statement|connection 30|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
 1641473370016|1|statement|connection 30|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
 1641473370017|1|statement|connection 30|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641527996304|23|statement|connection 0|/* ping */ SELECT 1|
+1641528150683|11|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641529765191|21|statement|connection 0|/* ping */ SELECT 1|
+1641529822524|14|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'

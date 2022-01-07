@@ -8,6 +8,12 @@ public interface OrderMapper {
     @Insert("INSERT INTO `web_order` (`id`, `userId`, `saleId`, `status`, `createDate`) values (${param1},${param2},${param3},0,NOW())")
     int generateOrder(String orderNo, String userId, String saleId);
 
+    /**
+     * Not used in this module
+     * @param orderNo
+     * @param status
+     * @return
+     */
     @Update("UPDATE `web_order` set `status`= #{param2}")
     int changOderStatus(String orderNo, int status);
 

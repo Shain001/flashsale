@@ -12,8 +12,10 @@
         <module>product_scan</module>
         <module>flash_sale_deduct_redis</module>
         <module>flash_sale_entry</module>
-        <module>flash_sale_order_generator</module>
+        <module>flash_sale_order</module>
         <module>flash_sale_common</module>
+        <module>flash_sale_payment</module>
+        <module>flash_sale_payment_consumer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
