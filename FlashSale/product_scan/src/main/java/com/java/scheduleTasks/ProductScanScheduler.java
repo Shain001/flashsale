@@ -3,6 +3,8 @@ package com.java.scheduleTasks;
 
 import com.java.service.ProductScanService;
 import com.java.service.ProductScanServiceImp;
+import org.redisson.Redisson;
+import org.redisson.api.RBloomFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -22,6 +24,9 @@ public class ProductScanScheduler {
     @Autowired
     RedisTemplate redisTemplate;
 
+    @Autowired
+    RBloomFilter<Integer> rBloomFilter;
+
     /**
      * Scan products that are about to start flash sale every 10s
      *
@@ -36,6 +41,17 @@ public class ProductScanScheduler {
      */
     @Scheduled(cron = "0/10 * * * * *")
     public void scanForProductToBeStarted(){
+        // refresh bloom filter
+        // rBloomFilter doesn't have method to remove a elements, so if do not refresh, then with time increase
+        // all bits in the bloom filter will be filled out, which means all retrieve will be returned true, the bloom
+        // filter will lose its meanning.
+        // so here every time scanning the flash sale DB, we refresh the bloom filter to maintain the precision.
+        // Although this may cause a problem that during this task is refreshing the bloom filter,
+        // there might be a short period that bloom filter lacks some elements, so some impossible requests may not be
+        // filtered by the gateway, the number of such requests should not too much.
+        // More importantly by now I don't see other solutions.
+        rBloomFilter.tryInit(100000, 0.03);
+
 
         // get products
         List<Map<String, Object>> products = service.getToBeStarted();
@@ -55,6 +71,9 @@ public class ProductScanScheduler {
                 ho.putIfAbsent(saleId, "status", 0);
                 ho.putIfAbsent(saleId, "productId", productId);
                 ho.putIfAbsent(saleId, "price", price);
+
+                // adding value to bloom filter for gateway filter
+                rBloomFilter.add(Integer.parseInt(saleId));
 
             }
         }

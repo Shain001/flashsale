@@ -1,35 +1,41 @@
 package com.java.application;
 
-import org.mybatis.spring.annotation.MapperScan;
+import com.java.filters.Filters;
 import org.redisson.Redisson;
+import org.redisson.api.RBloomFilter;
 import org.redisson.config.Config;
 import org.redisson.jcache.configuration.RedissonConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.io.IOException;
 
 @SpringBootApplication(scanBasePackages = "com.java.*")
 @EnableDiscoveryClient
-@MapperScan("com.java.mapper")
-@EnableScheduling // open scheduler
-@EnableCaching  // open cache in springboot
-public class ProductScanStartApplication {
+@EnableZuulProxy
+public class FalshSaleZuulStartApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProductScanStartApplication.class);
+        SpringApplication.run(FalshSaleZuulStartApplication.class);
+    }
+
+    @Bean
+    public Filters filters(){
+        return new Filters();
     }
 
     /**
      * Initializing Redisson
      */
     @Bean
-    public Redisson redisson() throws IOException {
+    public RBloomFilter<Integer> rBloomFilter() throws IOException {
         Config conf = new Config();
         conf = Config.fromYAML(RedissonConfiguration.class.getClassLoader().getResource("redisson-config.yml"));
-        return (Redisson) Redisson.create(conf);
+        Redisson redisson = (Redisson) Redisson.create(conf);
+        RBloomFilter<Integer> rBloomFilter = redisson.getBloomFilter("saleIds");
+        return rBloomFilter;
     }
+
 }

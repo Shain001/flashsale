@@ -8550,3 +8550,81 @@
 1641597691649|22|statement|connection 0|/* ping */ SELECT 1|
 1641597706230|6|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
 1641597804406|20|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641619644615|22|statement|connection 0|/* ping */ SELECT 1|
+1641619928561|56|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641620176211|13|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641620183032|11|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641620201928|5|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641630844012|14|statement|connection 60|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641630986537|13|statement|connection 60|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641631400701|10|statement|connection 60|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641632162791|9|statement|connection 70|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641632200587|5|statement|connection 70|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641632204511|4|statement|connection 70|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641633721210|25|statement|connection 0|/* ping */ SELECT 1|
+1641633740131|4|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641633832679|11|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '7' and userId = '8'
+1641633997285|33|statement|connection 0|/* ping */ SELECT 1|
+1641634053011|7|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641634086294|19|statement|connection 0|/* ping */ SELECT 1|
+1641634141517|11|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641634150830|5|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641634152895|2|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641636857174|21|statement|connection 0|/* ping */ SELECT 1|
+1641636860169|119|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636860194|6|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636860196|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636860202|1|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636860204|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636870003|2|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636870004|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636870009|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636870017|2|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636870019|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636880012|2|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636880025|2|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636880026|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636880031|2|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636880032|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636890010|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636890017|1|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636890018|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636890022|1|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636890023|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636900009|2|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636900012|2|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636900024|2|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636900031|1|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636900033|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636910006|1|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636910009|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636910015|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636910025|2|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636910026|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636920008|3|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636920023|2|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636920025|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636920031|1|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636920032|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636930007|1|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636930009|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636930015|1|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636930016|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636930019|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636940007|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636940013|1|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636940014|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641636940018|1|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636940019|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636950008|1|statement|connection 0|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()|update `web_seckill` set `status`=1 where startTime <= NOW() and endTime > NOW()
+1641636950009|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
+1641636950013|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where NOW() < startTime|select id, productId, stock, salePrice from web_seckill where NOW() < startTime
+1641636950018|1|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
+1641636950019|1|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1641638024591|23|statement|connection 0|/* ping */ SELECT 1|
+1641638141696|43|statement|connection 0|/* ping */ SELECT 1|
+1641638182349|17|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641638186192|7|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641638188326|1|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641638189213|8|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'
+1641638189885|4|statement|connection 0|UPDATE `web_order` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order` set `status`= 1 where saleId = '1' and userId = '1'

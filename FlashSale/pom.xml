@@ -16,6 +16,7 @@
         <module>flash_sale_common</module>
         <module>flash_sale_payment</module>
         <module>flash_sale_payment_consumer</module>
+        <module>falsh_sale_zuul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

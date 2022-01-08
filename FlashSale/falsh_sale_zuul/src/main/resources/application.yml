@@ -1,0 +1,18 @@
+server:
+   port: 8080
+spring:
+  application:
+    name: apiGateway
+zuul:
+  routes:
+    flash-sale-entry:
+      path: /buyProduct/**
+      serviceId: flashSaleEntry
+    payment-entry:
+      path: /pay/**
+      serviceId: paymentConsumer
+  host: # increase read timeout, necessary to config, otherwise get null exception. why?
+    socket-timeout-millis:  20000
+    connection-request-timeout-millis: 20000
+    time-to-live: 20000
+    connect-timeout-millis: 20000
