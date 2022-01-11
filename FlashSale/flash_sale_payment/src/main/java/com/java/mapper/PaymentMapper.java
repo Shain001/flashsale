@@ -8,6 +8,6 @@ public interface PaymentMapper {
      * @param status
      * @return
      */
-    @Update("UPDATE `web_order` set `status`= #{param3} where saleId = #{param1} and userId = #{userId}")
-    int changOderStatus(String saleId, String userId, int status);
+    @Update("UPDATE `web_order_` set `status`= #{param3} where saleId = #{param1} and userId = #{userId}")
+    int changOderStatus(int saleId, int userId, int status);
 }

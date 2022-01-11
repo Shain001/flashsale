@@ -77,8 +77,8 @@ spring:
           actual-data-nodes: ms_ds$->{1..2}.web_order_$->{1..2}
           table-strategy:
             inline:
-              sharding-column: id
-              algorithm-expression: web_order_$->{id % 2 +1}
+              sharding-column: userId
+              algorithm-expression: web_order_$->{userId % 2 +1}
           database-strategy:
             inline:
               sharding-column: saleId

@@ -1,5 +1,5 @@
 package com.java.service;
 
 public interface PaymentService {
-    int changeOrderState(String saleId, String userId, int status);
+    int changeOrderState(int saleId, int userId, int status);
 }

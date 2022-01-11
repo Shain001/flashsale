@@ -17,7 +17,7 @@ public class PaymentController {
     //private final static String DATABASE_EXCEPTION = "DATABASE_EXCEPTION";
 
     @RequestMapping(value = "/processPayment", method = RequestMethod.POST)
-    public String processPayment(@RequestParam("userId") String userId, @RequestParam("saleId") String saleId) throws Exception {
+    public String processPayment(@RequestParam("userId") int userId, @RequestParam("saleId") int saleId) throws Exception {
         // TODO: PaymentAPI
         // Here status is hardwrite as 1, if there is a real payment API, the status  value should depends on
         // the return value of paymentAPI, e.g. 1 -> pay sucess, 0 -> pay fail

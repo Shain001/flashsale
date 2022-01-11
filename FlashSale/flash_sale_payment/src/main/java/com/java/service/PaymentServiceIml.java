@@ -17,7 +17,7 @@ public class PaymentServiceIml implements PaymentService {
      * @return
      */
     @Override
-    public int changeOrderState(String saleId, String userId, int status){
+    public int changeOrderState(int saleId, int userId, int status){
         return mapper.changOderStatus(saleId, userId, status);
     }
 }
