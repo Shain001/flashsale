@@ -11855,3 +11855,51 @@
 1641897922539|9|statement|connection 0|/* ping */ SELECT 1|
 1641898047724|4|statement|connection 0|INSERT INTO `web_order_1` (`id`, `userId`, `saleId`, `status`, `createDate`) values (1641898047604006, 6, 2, 0, NOW())|INSERT INTO `web_order_1` (`id`, `userId`, `saleId`, `status`, `createDate`) values (1641898047604006, 6, 2, 0, NOW())
 1641898047734|4|statement|connection 0|UPDATE `web_seckill` set `stock`=`stock`-1 where id=?|UPDATE `web_seckill` set `stock`=`stock`-1 where id='2'
+1641902179352|33|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641902179380|1|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641902610734|21|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641902610778|1|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641902914042|19|statement|connection 20|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641902914054|1|statement|connection 20|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641902966605|41|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641902966641|1|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641902966666|1|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641902966682|1|statement|connection 0|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1641902966706|9|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641902982047|106|statement|connection 0|/* ping */ SELECT 1|
+1641903069856|72|statement|connection 19|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641903069889|1|statement|connection 19|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641903069922|1|statement|connection 19|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641903069980|4|statement|connection 19|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1641903070040|4|statement|connection 19|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641903128257|15|statement|connection 19|INSERT INTO `web_order_1` (`id`, `userId`, `saleId`, `status`, `createDate`) values (16419031274880090, 90, 2, 0, NOW())|INSERT INTO `web_order_1` (`id`, `userId`, `saleId`, `status`, `createDate`) values (16419031274880090, 90, 2, 0, NOW())
+1641903128297|4|statement|connection 19|UPDATE `web_seckill` set `stock`=`stock`-1 where id=?|UPDATE `web_seckill` set `stock`=`stock`-1 where id='2'
+1641903554422|40|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641903554453|2|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641903554482|3|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641903554497|3|statement|connection 0|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1641903554507|0|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641903566017|8|statement|connection 0|/* ping */ SELECT 1|
+1641903972704|35|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641903972749|3|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641903972785|2|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641903972797|1|statement|connection 0|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1641903972805|1|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641903983923|8|statement|connection 0|/* ping */ SELECT 1|
+1641904056269|29|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641904056310|2|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641904056352|1|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641904056362|0|statement|connection 0|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1641904056373|1|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641904068318|9|statement|connection 0|/* ping */ SELECT 1|
+1641904076878|40|statement|connection 1|SELECT * from `web_order_1`|SELECT * from `web_order_1`
+1641904076878|40|statement|connection 3|SELECT * from `web_order_1`|SELECT * from `web_order_1`
+1641904076885|7|statement|connection 3|SELECT * from `web_order_2`|SELECT * from `web_order_2`
+1641904076885|7|statement|connection 1|SELECT * from `web_order_2`|SELECT * from `web_order_2`
+1641904203401|32|statement|connection 40|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641904203437|1|statement|connection 40|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641904203474|1|statement|connection 40|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1641904203501|1|statement|connection 40|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1641904203516|1|statement|connection 40|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1641904221700|8|statement|connection 40|INSERT INTO `web_order_2` (`id`, `userId`, `saleId`, `status`, `createDate`) values (16419042214530091, 91, 2, 0, NOW())|INSERT INTO `web_order_2` (`id`, `userId`, `saleId`, `status`, `createDate`) values (16419042214530091, 91, 2, 0, NOW())
+1641904221730|3|statement|connection 40|UPDATE `web_seckill` set `stock`=`stock`-1 where id=?|UPDATE `web_seckill` set `stock`=`stock`-1 where id='2'

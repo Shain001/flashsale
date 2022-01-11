@@ -19,14 +19,29 @@ spring:
     # 1. Configure DataSource, same as normal datasource configuration
     datasource:
       # Allocate name to different databases
-      names: ds1,ds2
+      # Dont forgot to list any name here, other wise got error:
+      # java.lang.IllegalStateException: Missing the data source name: 'ds1_slave'
+      #	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
+      names: ds1,ds1slave,ds2,ds2slave
       # Configure each databases
       ds1:
         # configure type first -> can use almost any connection pool
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.p6spy.engine.spy.P6SpyDriver
         # This has to be jdbc-url instead of url, otherwise the system cannot find the url address
-        jdbc-url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale
+        jdbc-url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale?serverTimezone=GMT%2B10
+        username: root
+        password: 1122110
+        hikari:
+          maximum-pool-size: 30
+          minimum-idle: 10
+      # slave for ds1
+      ds1slave:
+        # configure type first -> can use almost any connection pool
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        # This has to be jdbc-url instead of url, otherwise the system cannot find the url address
+        jdbc-url: jdbc:p6spy:mysql://127.0.0.1:3306/FlashSale?serverTimezone=GMT%2B10
         username: root
         password: 1122110
         hikari:
@@ -42,11 +57,24 @@ spring:
         hikari:
           maximum-pool-size: 30
           minimum-idle: 10
+      ds2slave:
+        # configure type first -> can use almost any connection pool
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        jdbc-url: jdbc:p6spy:mysql://127.0.0.1:3306/FlashSale_2?serverTimezone=GMT%2B10
+        username: root
+        password: 1122110
+        hikari:
+          maximum-pool-size: 30
+          minimum-idle: 10
+
+
     # Configure Table selection strategies
     sharding:
+      defaultDataSourceName: ds1
       tables:
         web_order_:
-          actual-data-nodes: ds$->{1..2}.web_order_$->{1..2}
+          actual-data-nodes: ms_ds$->{1..2}.web_order_$->{1..2}
           table-strategy:
             inline:
               sharding-column: id
@@ -54,9 +82,18 @@ spring:
           database-strategy:
             inline:
               sharding-column: saleId
-              algorithm-expression: ds$->{saleId % 2 +1}
+              algorithm-expression: ms_ds$->{saleId % 2 +1}
         web_seckill:
-          actual-data-nodes: ds1.web_seckill
+          actual-data-nodes: ms_ds1.web_seckill
+      master-slave-rules:
+        ms_ds1:
+          masterDataSourceName: ds1
+          slaveDataSourceNames:
+            - ds1slave
+        ms_ds2:
+          masterDataSourceName: ds2
+          slaveDataSourceNames:
+            - ds2slave
     props:
       sql:
         show: true
