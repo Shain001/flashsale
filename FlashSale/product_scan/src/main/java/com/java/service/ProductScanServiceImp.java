@@ -34,4 +34,9 @@ public class ProductScanServiceImp implements ProductScanMapper, ProductScanServ
     public List<Map<String, Object>> getAfterSale() {
         return mapper.getAfterSale();
     }
+
+    @Override
+    public List<Map<String, Object>> getAllSaleId() {
+        return mapper.getAllSaleId();
+    }
 }

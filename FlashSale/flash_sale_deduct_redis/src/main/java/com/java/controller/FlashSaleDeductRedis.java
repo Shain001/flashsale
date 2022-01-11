@@ -91,12 +91,12 @@ public class FlashSaleDeductRedis {
 
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
+            return "exception in deduct stock";
         } finally {
             lock.unlock();
         }
 
-
-        return "1";
     }
 
     /**

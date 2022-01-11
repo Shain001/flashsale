@@ -53,7 +53,7 @@ public class Filters extends ZuulFilter {
         String userId = request.getParameter("userId") + "";
         String saleId = request.getParameter("saleId") + "";
 
-        // check if userId/saleId is numeric and if they are positive number to filter out illegal reqeust
+        // filter 1. check if userId/saleId is numeric and if they are positive number to filter out illegal reqeust
         if (!checkId(userId) || !checkId(saleId)) {
             log.warn("illegal request");
             // config response
@@ -63,7 +63,7 @@ public class Filters extends ZuulFilter {
             return null;
         }
 
-        // bloom filter for saleIds that not exist
+        // filter 2. bloom filter for saleIds that not exist
         if (!rBloomFilter.contains(Integer.parseInt(saleId))){
             log.warn("not exit flash sale");
             // config response
@@ -79,7 +79,7 @@ public class Filters extends ZuulFilter {
 
     public boolean checkId(String id){
         try{
-            if (Integer.parseInt(id) < 0){
+            if (Integer.parseInt(id) <= 0){
                 return false;
             }
         }catch (Exception e){

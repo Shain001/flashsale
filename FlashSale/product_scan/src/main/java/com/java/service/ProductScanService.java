@@ -13,4 +13,6 @@ public interface ProductScanService {
     List<Map<String, Object>> getAfterSale();
 
     List<Map<String, Object>> getBeingSale();
+
+    List<Map<String, Object>> getAllSaleId();
 }

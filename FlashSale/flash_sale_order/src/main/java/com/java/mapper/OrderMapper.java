@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Update;
 
 public interface OrderMapper {
-    @Insert("INSERT INTO `web_order` (`id`, `userId`, `saleId`, `status`, `createDate`) values (${param1},${param2},${param3},0,NOW())")
+    @Insert("INSERT INTO `web_order_` (`id`, `userId`, `saleId`, `status`, `createDate`) values (${param1},${param2},${param3},0,NOW())")
     int generateOrder(String orderNo, String userId, String saleId);
 
     /**

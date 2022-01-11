@@ -13,6 +13,15 @@
 
     <dependencies>
 
+        <!-- sharding -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+
+
+        <!-- test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -31,6 +40,18 @@
                 <exclusion>
                     <groupId>org.apache.zookeeper</groupId>
                     <artifactId>zookeeper</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>httpclient</artifactId>
+                    <groupId>org.apache.httpcomponents</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>HdrHistogram</artifactId>
+                    <groupId>org.hdrhistogram</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -63,35 +84,35 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-                <!-- mybatis启动器 -->
-                <dependency>
-                    <groupId>org.mybatis.spring.boot</groupId>
-                    <artifactId>mybatis-spring-boot-starter</artifactId>
-                </dependency>
-                <!-- 通用Mapper启动器 -->
-                <dependency>
-                    <groupId>tk.mybatis</groupId>
-                    <artifactId>mapper-spring-boot-starter</artifactId>
-                </dependency>
-                <!-- 分页助手启动器 -->
-                <dependency>
-                    <groupId>com.github.pagehelper</groupId>
-                    <artifactId>pagehelper-spring-boot-starter</artifactId>
-                </dependency>
-                <!-- mysql驱动 -->
-                <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-actuator</artifactId>
-                </dependency>
-                <!--引入p6spy-->
-                <dependency>
-                    <groupId>p6spy</groupId>
-                    <artifactId>p6spy</artifactId>
-                </dependency>
+        <!-- mybatis启动器 -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- 通用Mapper启动器 -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- 分页助手启动器 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- mysql驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--引入p6spy-->
+        <dependency>
+            <groupId>p6spy</groupId>
+            <artifactId>p6spy</artifactId>
+        </dependency>
 <!--        &lt;!&ndash;引入redisson&ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>org.redisson</groupId>-->

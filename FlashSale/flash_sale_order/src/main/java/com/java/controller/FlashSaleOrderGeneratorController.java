@@ -13,6 +13,7 @@ import org.springframework.messaging.handler.annotation.Headers;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Controller;
 
+import java.io.IOException;
 import java.util.Map;
 
 @Controller
@@ -22,10 +23,10 @@ public class FlashSaleOrderGeneratorController {
     private OrderService service;
 
     @RabbitListener(bindings = @QueueBinding(
-            value = @Queue(value = "flash_sale_queue1"),
+            value = @Queue(value = "flash_sale_queue2"),
             exchange = @Exchange(value = "flash_sale",type = "fanout")
     ))
-    public void consumeMQ(@Payload Map<String,Object> message, Channel channel, @Headers Map<String,Object> headers){
+    public void consumeMQ(@Payload Map<String,Object> message, Channel channel, @Headers Map<String,Object> headers) throws IOException {
         try{
             // get salId, userId
             String saleId = message.get("saleId") + "";
@@ -52,7 +53,7 @@ public class FlashSaleOrderGeneratorController {
             // Shouldn't let user know the order created failed since they already got the eligibility to buy the product
             // and also is doing the payment process
 
-            if (generateState == 1 && updateState == 1){
+            if (generateState != 0 && updateState != 0){
                 channel.basicAck((Long) headers.get(AmqpHeaders.DELIVERY_TAG),false);
             }
 
@@ -60,6 +61,7 @@ public class FlashSaleOrderGeneratorController {
 
         }catch (Exception e){
             e.printStackTrace();
+            //channel.basicNack((Long) headers.get(AmqpHeaders.DELIVERY_TAG),false, true);
         }
 
         //

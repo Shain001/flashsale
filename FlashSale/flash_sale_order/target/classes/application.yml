@@ -1,16 +1,65 @@
 server:
-  port: 8006
+  port: 8000
+
 spring:
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: orderGenerator
-  datasource:
-    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-    url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale
-    username: root
-    password: 1122110
-    hikari:
-      maximum-pool-size: 30
-      minimum-idle: 10
+# updated to ShardingSephere at 2022/1/11
+#  datasource:
+#    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+#    url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale
+#    username: root
+#    password: 1122110
+#    hikari:
+#      maximum-pool-size: 30
+#      minimum-idle: 10
+  shardingsphere:
+    # 1. Configure DataSource, same as normal datasource configuration
+    datasource:
+      # Allocate name to different databases
+      names: ds1,ds2
+      # Configure each databases
+      ds1:
+        # configure type first -> can use almost any connection pool
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        # This has to be jdbc-url instead of url, otherwise the system cannot find the url address
+        jdbc-url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale
+        username: root
+        password: 1122110
+        hikari:
+          maximum-pool-size: 30
+          minimum-idle: 10
+      ds2:
+        # configure type first -> can use almost any connection pool
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        jdbc-url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale_2?serverTimezone=GMT%2B10
+        username: root
+        password: 1122110
+        hikari:
+          maximum-pool-size: 30
+          minimum-idle: 10
+    # Configure Table selection strategies
+    sharding:
+      tables:
+        web_order_:
+          actual-data-nodes: ds$->{1..2}.web_order_$->{1..2}
+          table-strategy:
+            inline:
+              sharding-column: id
+              algorithm-expression: web_order_$->{id % 2 +1}
+          database-strategy:
+            inline:
+              sharding-column: saleId
+              algorithm-expression: ds$->{saleId % 2 +1}
+        web_seckill:
+          actual-data-nodes: ds1.web_seckill
+    props:
+      sql:
+        show: true
   devtools:
     restart:
       enabled: true
@@ -26,11 +75,7 @@ spring:
       simple:
         acknowledge-mode: manual
         prefetch: 1
-#  redis:
-#    host: 192.168.100.128
-#    database: 0
-#    port: 6379
-#    timeout: 5000
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.java.pojo
+

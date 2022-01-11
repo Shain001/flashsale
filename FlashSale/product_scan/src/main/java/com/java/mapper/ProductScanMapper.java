@@ -54,6 +54,7 @@ public interface ProductScanMapper {
     @Select("select id, productId, stock, salePrice from web_seckill where endTime<=NOW()")
     List<Map<String, Object>> getAfterSale();
 
-
+    @Select("select id from web_seckill")
+    List<Map<String, Object>> getAllSaleId();
 
 }
