@@ -4,6 +4,7 @@ import com.java.filters.Filters;
 import org.redisson.Redisson;
 import org.redisson.api.RBloomFilter;
 import org.redisson.config.Config;
+import org.redisson.config.ReadMode;
 import org.redisson.jcache.configuration.RedissonConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,7 +33,13 @@ public class FalshSaleZuulStartApplication {
     @Bean
     public RBloomFilter<Integer> rBloomFilter() throws IOException {
         Config conf = new Config();
-        conf = Config.fromYAML(RedissonConfiguration.class.getClassLoader().getResource("redisson-config.yml"));
+        //conf = Config.fromYAML(RedissonConfiguration.class.getClassLoader().getResource("redisson-config.yml"));
+        conf.useSentinelServers().addSentinelAddress("redis://192.168.100.128:26379")
+                .addSentinelAddress("redis://192.168.100.128:26380")
+                .addSentinelAddress("redis://192.168.100.128:26381")
+                .setMasterName("mymaster")
+//                .setCheckSentinelsList(false)
+                .setReadMode(ReadMode.SLAVE);
         Redisson redisson = (Redisson) Redisson.create(conf);
         RBloomFilter<Integer> rBloomFilter = redisson.getBloomFilter("saleIds");
         return rBloomFilter;

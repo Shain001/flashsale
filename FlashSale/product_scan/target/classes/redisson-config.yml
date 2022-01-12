@@ -1,26 +1,19 @@
-singleServerConfig:
-  address: "redis://192.168.100.128:6379"
+sentinelServersConfig:
+  timeout: 3000
+  checkSentinelsList: false
+  sentinelAddresses:
+  - "rediss://192.168.100.128:26379"
+  - "rediss://192.168.100.128:26380"
+  - "rediss://192.168.100.128:26381"
+  masterName: "mymaster"
 #  password: null
 #  clientName: null
   database: 0 #选择使用哪个数据库0~15
-#  idleConnectionTimeout: 10000
-#  pingTimeout: 1000
-#  connectTimeout: 10000
-#  timeout: 3000
-#  retryAttempts: 3
-#  retryInterval: 1500
-#  reconnectionTimeout: 3000
-#  failedAttempts: 3
-#  subscriptionsPerConnection: 5
-#  subscriptionConnectionMinimumIdleSize: 1
-#  subscriptionConnectionPoolSize: 50
-#  connectionMinimumIdleSize: 32
-#  connectionPoolSize: 64
-#  dnsMonitoringInterval: 5000
-#  #dnsMonitoring: false
-#
-#threads: 0
-#nettyThreads: 0
-#codec:
-#  class: "org.redisson.codec.JsonJacksonCodec"
-#transportMode: "NIO"
+  slaveConnectionMinimumIdleSize: 10
+  slaveConnectionPoolSize: 300
+  masterConnectionMinimumIdleSize: 10
+  masterConnectionPoolSize: 300
+threads: 0
+nettyThreads: 0
+codec: !<org.redisson.codec.FstCodec> {}
+transportMode: "NIO"

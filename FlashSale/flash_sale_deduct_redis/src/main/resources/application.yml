@@ -6,10 +6,12 @@ spring:
   application:
     name: deductRedis
   redis:
+    sentinel:
+      master: mymaster
+      host: "192.168.100.128:26379,192.168.100.128:26380,192.168.100.128:26381"
+      nodes: ${spring.redis.sentinel.host}
     host: 192.168.100.128
-    database: 0
-    port: 6379
-    timeout: 5000
+    port: 6380
   devtools:
     restart:
       enabled: false

@@ -95,6 +95,7 @@
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${redis.version}</version>
             </dependency>
+
             <!--引入P6spy的依赖-->
             <dependency>
                 <groupId>p6spy</groupId>

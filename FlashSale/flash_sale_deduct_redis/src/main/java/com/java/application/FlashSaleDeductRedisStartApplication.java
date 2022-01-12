@@ -3,6 +3,7 @@ package com.java.application;
 import com.java.controller.FlashSaleDeductRedis;
 import org.redisson.Redisson;
 import org.redisson.config.Config;
+import org.redisson.config.ReadMode;
 import org.redisson.jcache.configuration.RedissonConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -29,7 +30,13 @@ public class FlashSaleDeductRedisStartApplication {
     @Bean
     public Redisson redisson() throws IOException {
         Config conf = new Config();
-        conf = Config.fromYAML(RedissonConfiguration.class.getClassLoader().getResource("redisson-config.yml"));
+        //conf = Config.fromYAML(RedissonConfiguration.class.getClassLoader().getResource("redisson-config.yml"));
+        conf.useSentinelServers().addSentinelAddress("redis://192.168.100.128:26379")
+                .addSentinelAddress("redis://192.168.100.128:26380")
+                .addSentinelAddress("redis://192.168.100.128:26381")
+                .setMasterName("mymaster")
+//                .setCheckSentinelsList(false)
+                .setReadMode(ReadMode.SLAVE);
         return (Redisson) Redisson.create(conf);
     }
 }
