@@ -13050,3 +13050,48 @@
 1641989290024|0|statement|connection 0|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()|select id, productId, stock, salePrice from web_seckill where startTime<=NOW() and endTime > NOW()
 1641989290047|2|statement|connection 0|update `web_seckill` set `status`=2 where endTime <= NOW()|update `web_seckill` set `status`=2 where endTime <= NOW()
 1641989290049|2|statement|connection 0|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()|select id, productId, stock, salePrice from web_seckill where endTime<=NOW()
+1642070630217|46|statement|connection 0|/* ping */ SELECT 1|
+1642070963664|24|statement|connection 0|/* ping */ SELECT 1|
+1642071119548|23|statement|connection 0|/* ping */ SELECT 1|
+1642071136689|420|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642071740833|40|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642071764708|8|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642071773064|2|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'rootp'
+1642071905694|28|statement|connection 0|/* ping */ SELECT 1|
+1642072481145|22|statement|connection 0|/* ping */ SELECT 1|
+1642072627183|28|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072643882|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072658563|6|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072661270|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072667149|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072672417|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072676777|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642072683249|6|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'riot'
+1642072687590|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074301641|39|statement|connection 0|/* ping */ SELECT 1|
+1642074375362|26|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074392620|9|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074433057|6|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074509555|27|statement|connection 0|/* ping */ SELECT 1|
+1642074533866|2|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074593210|1|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074654477|3|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074794826|30|statement|connection 0|/* ping */ SELECT 1|
+1642074806465|4|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074815240|2|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074900607|3|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642074909843|2|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642076646260|24|statement|connection 0|/* ping */ SELECT 1|
+1642077071399|40|statement|connection 0|/* ping */ SELECT 1|
+1642077079830|22|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642077087746|5|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642077093520|2|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'rooet'
+1642077184931|31|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1642077185013|29|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1642077185052|2|statement|connection 0|SELECT * FROM `web_order_1` WHERE 1 != 1|
+1642077185074|6|statement|connection 0|SELECT * FROM `web_order_2` WHERE 1 != 1|
+1642077185090|1|statement|connection 0|SELECT * FROM `web_seckill` WHERE 1 != 1|
+1642077185109|1|statement|connection 0|SELECT * FROM `web_user` WHERE 1 != 1|
+1642077196278|10|statement|connection 0|/* ping */ SELECT 1|
+1642077207270|15|statement|connection 7|UPDATE `web_order_2` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order_2` set `status`= 1 where saleId = 1 and userId = 1
+1642077220097|7|statement|connection 7|UPDATE `web_order_2` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order_2` set `status`= 1 where saleId = 1 and userId = 1

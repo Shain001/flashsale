@@ -1,5 +1,6 @@
 package com.java.application;
 
+import com.java.filters.AuthFilter;
 import com.java.filters.Filters;
 import org.redisson.Redisson;
 import org.redisson.api.RBloomFilter;
@@ -25,6 +26,11 @@ public class FalshSaleZuulStartApplication {
     @Bean
     public Filters filters(){
         return new Filters();
+    }
+
+    @Bean
+    public AuthFilter authFilter(){
+        return new AuthFilter();
     }
 
     /**

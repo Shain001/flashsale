@@ -11,8 +11,12 @@ zuul:
     payment-entry:
       path: /pay/**
       serviceId: paymentConsumer
+    login:
+      path: /login/**
+      serviceid: userAuth
   host: # increase read timeout, necessary to config, otherwise get null exception. why?
     socket-timeout-millis:  20000
     connection-request-timeout-millis: 20000
     time-to-live: 20000
     connect-timeout-millis: 20000
+  sensitive-headers:

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flash_sale_payment_consumer" />
         <module name="flash_sale_deduct_redis" />
+        <module name="flash_sale_user_authenticate" />
         <module name="flash_sale_consumer" />
         <module name="flash_sale_payment" />
         <module name="flash_sale_common" />
@@ -30,6 +32,7 @@
       <module name="flash_sale_order" options="-parameters" />
       <module name="flash_sale_payment" options="-parameters" />
       <module name="flash_sale_payment_consumer" options="-parameters" />
+      <module name="flash_sale_user_authenticate" options="-parameters" />
       <module name="product_scan" options="-parameters" />
     </option>
   </component>

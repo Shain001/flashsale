@@ -1,0 +1,16 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: userAuth
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://192.168.100.128:3306/FlashSale
+    username: root
+    password: 1122110
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.java.pojo

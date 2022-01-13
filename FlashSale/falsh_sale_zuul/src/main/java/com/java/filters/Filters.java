@@ -24,7 +24,7 @@ public class Filters extends ZuulFilter {
 
     @Override
     public int filterOrder() {
-        return 0;
+        return 2;
     }
 
     @Override
@@ -36,8 +36,26 @@ public class Filters extends ZuulFilter {
      * Filter illegal userId and saleId to minimize the workload for backend services
      *
      * Filter saleIds that are impossible to exist by using bloom filter
-     * @return
-     * @throws ZuulException
+     *
+     *         TODO: note that here the check for parameters is only considering current exists APIs, which are
+     *          sale api and payment api only, all of these two are using same two parameters only: userId and saleId
+     *          Therefore, it is ok to intercept all illegal reqeust by checking these two here.
+     *          However, if the project is updated for more modules with more APIs, the checking for parameters should be
+     *          done according to specific APIs, since at that time, the parameters may varies.
+     *          For example, if a "adding product api" is added for admins/retailers, then this API's will not use the parameters
+     *          saleId and userId. As a result, if this part of code is not modified, then all the request for this new API
+     *          will be intercepted.
+     *          To solve that problem, every request should be checked respectively according to the url.
+     *          e.g.
+     *                 String url = request.getRequestURI();
+     *                 String method = request.getMethod();
+     *                 if (url.equals(xxx)){
+     *                       filtering parameters..
+     *                  }
+     *
+     *
+     * @lastUpdate 2022/01/13
+     * @author  Shenyi Zhang
      */
     @Override
     public Object run() throws ZuulException {
@@ -46,8 +64,10 @@ public class Filters extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
 
-        // Add log
-        log.info("send {} reqeust to {}" + request.getMethod(), ctx.get("proxy"));
+        // allow all request for logging in
+        if (request.getRequestURI().equals("//login/login")){
+            return null;
+        }
 
         // Get Request Parameter
         String userId = request.getParameter("userId") + "";
