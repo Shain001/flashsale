@@ -32,6 +32,6 @@ public class PaymentController {
             throw new Exception("Not Created Yet");
         }
 
-        return state+" Thread: " + Thread.currentThread().getName();
+        return "pay success";
     }
 }

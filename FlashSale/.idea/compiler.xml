@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flash_sale_payment_consumer" />
-        <module name="flash_sale_deduct_redis" />
         <module name="flash_sale_user_authenticate" />
+        <module name="flash_sale_deduct_redis" />
         <module name="flash_sale_consumer" />
         <module name="flash_sale_payment" />
         <module name="flash_sale_common" />

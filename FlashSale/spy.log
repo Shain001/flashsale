@@ -13095,3 +13095,6 @@
 1642077196278|10|statement|connection 0|/* ping */ SELECT 1|
 1642077207270|15|statement|connection 7|UPDATE `web_order_2` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order_2` set `status`= 1 where saleId = 1 and userId = 1
 1642077220097|7|statement|connection 7|UPDATE `web_order_2` set `status`= ? where saleId = ? and userId = ?|UPDATE `web_order_2` set `status`= 1 where saleId = 1 and userId = 1
+1642400173509|25|statement|connection 0|/* ping */ SELECT 1|
+1642400291992|56|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'
+1642400320919|16|statement|connection 0|select passwd from web_user where account = ?|select passwd from web_user where account = 'root'

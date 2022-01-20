@@ -60,7 +60,7 @@ public class FlashSaleDeductRedis {
         // check if current user has bought before
         String checkUserKey = "has_" + userId;
         if (lo.isMember(checkUserKey, userId)){
-            return "Don't be greedy " + serverPort;
+            return "Don't be greedy" + serverPort;
         }
 
         try{
@@ -75,7 +75,7 @@ public class FlashSaleDeductRedis {
 
             // check stock
             if (stock <= 0){
-                return "oops, out of stock " + serverPort;
+                return "oops, out of stock";
             }
 
             // All good, buy success, update stock in redis, then put message into MQ
@@ -87,7 +87,8 @@ public class FlashSaleDeductRedis {
             // Put Message to RabbitMQ
             service.putRabbitMQ(saleId, userId);
 
-            return "Congratulations, you got it " + serverPort;
+            // TODO: Add userId to redis for repeat-buy prevention; Not Created yet
+            return "Congratulations, you got it";
 
         } catch (Exception e) {
             e.printStackTrace();
